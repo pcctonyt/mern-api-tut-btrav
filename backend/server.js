@@ -1,9 +1,13 @@
 // Brad Traversy tutorial series for MERN full-stack goals app
 // first video, get the REST API, second video, authentication, then a dashboard for goals, front end he's wanting to use Redux and Redux toolkit, smaller version of React Ticket application full 2022 course
 const express = require("express")
+const colors = require("colors")
 const dotenv = require("dotenv").config()
 const { errorHandler } = require("./middleware/errorMiddleware") 
+const connectDB = require("./config/db")
 const port = process.env.PORT || 5000
+
+connectDB()
 
 const app = express()
 
@@ -17,4 +21,4 @@ app.use(errorHandler)
 app.listen(port, () => console.log(`Server is listening on port ${port}`))
 
 
-//left off at 33:39 out of 57:33 Brad Traversy APIs tutorial first of four videos in MERN goals setting app project
+//left off at 46:34 out of 57:33 (1st video) Brad Traversy APIs tutorial first of four videos in MERN goals setting app project
