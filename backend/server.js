@@ -15,6 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use("/api/goals", require("./routes/goalRoutes"))
+app.use("/api/users", require("./routes/userRoutes"))
 
 app.use(errorHandler)
 
@@ -22,3 +23,4 @@ app.listen(port, () => console.log(`Server is listening on port ${port}`))
 
 
 //finished 1st video 57:33 out of 57:33 (1st video completed) Brad Traversy APIs tutorial first of four videos in MERN goals setting app project
+//start second video (JWT Authentication 23:54 out of 52:28) - Learn the MERN Stack - JWT Authentication Brad Traversy second of four total videos
