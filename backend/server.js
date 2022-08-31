@@ -21,4 +21,4 @@ app.use(errorHandler)
 app.listen(port, () => console.log(`Server is listening on port ${port}`))
 
 
-//left off at 46:34 out of 57:33 (1st video) Brad Traversy APIs tutorial first of four videos in MERN goals setting app project
+//finished 1st video 57:33 out of 57:33 (1st video completed) Brad Traversy APIs tutorial first of four videos in MERN goals setting app project
